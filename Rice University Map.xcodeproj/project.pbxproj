@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4318355E18983FF200934AF1 /* RUMapDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4318355D18983FF200934AF1 /* RUMapDataManager.m */; };
+		431835611898402900934AF1 /* RUMapDataResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 431835601898402900934AF1 /* RUMapDataResult.m */; };
+		431835641898425B00934AF1 /* RUMapDataLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 431835631898425B00934AF1 /* RUMapDataLocation.m */; };
+		431835671898450300934AF1 /* RUMapDataCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = 431835661898450300934AF1 /* RUMapDataCourse.m */; };
+		431835691898C72400934AF1 /* campus_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 431835681898C72400934AF1 /* campus_data.json */; };
+		4318356B1898C73500934AF1 /* faculty.json in Resources */ = {isa = PBXBuildFile; fileRef = 4318356A1898C73500934AF1 /* faculty.json */; };
+		43B94DF9189999C400C9CBCF /* RUMapDataPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B94DF8189999C400C9CBCF /* RUMapDataPerson.m */; };
+		43B94DFB1899A40900C9CBCF /* courses.json in Resources */ = {isa = PBXBuildFile; fileRef = 43B94DFA1899A40900C9CBCF /* courses.json */; };
+		43B94DFE1899A80B00C9CBCF /* RUMapDataBuses.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B94DFD1899A80B00C9CBCF /* RUMapDataBuses.m */; };
+		43E198031899BF85009E392E /* NetworkActivityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E198021899BF85009E392E /* NetworkActivityManager.m */; };
+		43E198051899C27E009E392E /* bus-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 43E198041899C27E009E392E /* bus-blue.png */; };
+		43E1980B1899C4B3009E392E /* CachedRemoteJSONData.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E1980A1899C4B3009E392E /* CachedRemoteJSONData.m */; };
+		43E1980D1899C701009E392E /* bus-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 43E1980C1899C701009E392E /* bus-icon.png */; };
+		43E198181899C9B0009E392E /* bus-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43E198171899C9B0009E392E /* bus-icon@2x.png */; };
+		43F447571898364500EF687F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F447561898364500EF687F /* Foundation.framework */; };
+		43F447591898364500EF687F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F447581898364500EF687F /* CoreGraphics.framework */; };
+		43F4475B1898364500EF687F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F4475A1898364500EF687F /* UIKit.framework */; };
+		43F447611898364500EF687F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43F4475F1898364500EF687F /* InfoPlist.strings */; };
+		43F447631898364500EF687F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F447621898364500EF687F /* main.m */; };
+		43F447671898364500EF687F /* RUMapAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F447661898364500EF687F /* RUMapAppDelegate.m */; };
+		43F4476A1898364500EF687F /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43F447681898364500EF687F /* Main_iPhone.storyboard */; };
+		43F4476D1898364500EF687F /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43F4476B1898364500EF687F /* Main_iPad.storyboard */; };
+		43F447701898364500EF687F /* RUMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F4476F1898364500EF687F /* RUMapViewController.m */; };
+		43F447721898364500EF687F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43F447711898364500EF687F /* Images.xcassets */; };
+		43F447791898364500EF687F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F447781898364500EF687F /* XCTest.framework */; };
+		43F4477A1898364500EF687F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F447561898364500EF687F /* Foundation.framework */; };
+		43F4477B1898364500EF687F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F4475A1898364500EF687F /* UIKit.framework */; };
+		43F447831898364500EF687F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43F447811898364500EF687F /* InfoPlist.strings */; };
+		43F447851898364500EF687F /* Rice_University_MapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F447841898364500EF687F /* Rice_University_MapTests.m */; };
+		43F4478F1898384200EF687F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F4478E1898384200EF687F /* MapKit.framework */; };
+		43F447911898384900EF687F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F447901898384900EF687F /* CoreLocation.framework */; };
+		43F4479318983A3100EF687F /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F4479218983A3100EF687F /* GoogleMaps.framework */; };
+		43F4479718983A8E00EF687F /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 43F4479618983A8E00EF687F /* GoogleMaps.bundle */; };
+		43F4479918983AB300EF687F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F4479818983AB300EF687F /* AVFoundation.framework */; };
+		43F4479B18983ABA00EF687F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F4479A18983ABA00EF687F /* CoreData.framework */; };
+		43F4479D18983AC900EF687F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F4479C18983AC900EF687F /* CoreText.framework */; };
+		43F4479F18983ACF00EF687F /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F4479E18983ACF00EF687F /* GLKit.framework */; };
+		43F447A118983ADB00EF687F /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F447A018983ADB00EF687F /* ImageIO.framework */; };
+		43F447A318983AE200EF687F /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F447A218983AE200EF687F /* libc++.dylib */; };
+		43F447A518983AEF00EF687F /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F447A418983AEF00EF687F /* libicucore.dylib */; };
+		43F447A718983AFA00EF687F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F447A618983AFA00EF687F /* libz.dylib */; };
+		43F447A918983B0000EF687F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F447A818983B0000EF687F /* OpenGLES.framework */; };
+		43F447AB18983B0A00EF687F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F447AA18983B0A00EF687F /* QuartzCore.framework */; };
+		43F447AD18983B1100EF687F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F447AC18983B1100EF687F /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43F4477C1898364500EF687F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43F4474B1898364500EF687F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43F447521898364500EF687F;
+			remoteInfo = "Rice University Map";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4318355C18983FF200934AF1 /* RUMapDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUMapDataManager.h; sourceTree = "<group>"; };
+		4318355D18983FF200934AF1 /* RUMapDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUMapDataManager.m; sourceTree = "<group>"; };
+		4318355F1898402900934AF1 /* RUMapDataResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUMapDataResult.h; sourceTree = "<group>"; };
+		431835601898402900934AF1 /* RUMapDataResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUMapDataResult.m; sourceTree = "<group>"; };
+		431835621898425B00934AF1 /* RUMapDataLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUMapDataLocation.h; sourceTree = "<group>"; };
+		431835631898425B00934AF1 /* RUMapDataLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUMapDataLocation.m; sourceTree = "<group>"; };
+		431835651898450300934AF1 /* RUMapDataCourse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUMapDataCourse.h; sourceTree = "<group>"; };
+		431835661898450300934AF1 /* RUMapDataCourse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUMapDataCourse.m; sourceTree = "<group>"; };
+		431835681898C72400934AF1 /* campus_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = campus_data.json; sourceTree = "<group>"; };
+		4318356A1898C73500934AF1 /* faculty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = faculty.json; sourceTree = "<group>"; };
+		43B94DF7189999C400C9CBCF /* RUMapDataPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUMapDataPerson.h; sourceTree = "<group>"; };
+		43B94DF8189999C400C9CBCF /* RUMapDataPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUMapDataPerson.m; sourceTree = "<group>"; };
+		43B94DFA1899A40900C9CBCF /* courses.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = courses.json; sourceTree = "<group>"; };
+		43B94DFC1899A80B00C9CBCF /* RUMapDataBuses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUMapDataBuses.h; sourceTree = "<group>"; };
+		43B94DFD1899A80B00C9CBCF /* RUMapDataBuses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUMapDataBuses.m; sourceTree = "<group>"; };
+		43E198011899BF85009E392E /* NetworkActivityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkActivityManager.h; sourceTree = "<group>"; };
+		43E198021899BF85009E392E /* NetworkActivityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkActivityManager.m; sourceTree = "<group>"; };
+		43E198041899C27E009E392E /* bus-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bus-blue.png"; sourceTree = "<group>"; };
+		43E198091899C4B3009E392E /* CachedRemoteJSONData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CachedRemoteJSONData.h; sourceTree = "<group>"; };
+		43E1980A1899C4B3009E392E /* CachedRemoteJSONData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CachedRemoteJSONData.m; sourceTree = "<group>"; };
+		43E1980C1899C701009E392E /* bus-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bus-icon.png"; sourceTree = "<group>"; };
+		43E198171899C9B0009E392E /* bus-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bus-icon@2x.png"; sourceTree = "<group>"; };
+		43F447531898364500EF687F /* Rice University Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rice University Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43F447561898364500EF687F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		43F447581898364500EF687F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		43F4475A1898364500EF687F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		43F4475E1898364500EF687F /* Rice University Map-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Rice University Map-Info.plist"; sourceTree = "<group>"; };
+		43F447601898364500EF687F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		43F447621898364500EF687F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		43F447641898364500EF687F /* Rice University Map-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rice University Map-Prefix.pch"; sourceTree = "<group>"; };
+		43F447651898364500EF687F /* RUMapAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RUMapAppDelegate.h; sourceTree = "<group>"; };
+		43F447661898364500EF687F /* RUMapAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RUMapAppDelegate.m; sourceTree = "<group>"; };
+		43F447691898364500EF687F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		43F4476C1898364500EF687F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		43F4476E1898364500EF687F /* RUMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RUMapViewController.h; sourceTree = "<group>"; };
+		43F4476F1898364500EF687F /* RUMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RUMapViewController.m; sourceTree = "<group>"; };
+		43F447711898364500EF687F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		43F447771898364500EF687F /* Rice University MapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rice University MapTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43F447781898364500EF687F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		43F447801898364500EF687F /* Rice University MapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Rice University MapTests-Info.plist"; sourceTree = "<group>"; };
+		43F447821898364500EF687F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		43F447841898364500EF687F /* Rice_University_MapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rice_University_MapTests.m; sourceTree = "<group>"; };
+		43F4478E1898384200EF687F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		43F447901898384900EF687F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		43F4479218983A3100EF687F /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		43F4479618983A8E00EF687F /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		43F4479818983AB300EF687F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		43F4479A18983ABA00EF687F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		43F4479C18983AC900EF687F /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		43F4479E18983ACF00EF687F /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		43F447A018983ADB00EF687F /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		43F447A218983AE200EF687F /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		43F447A418983AEF00EF687F /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		43F447A618983AFA00EF687F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		43F447A818983B0000EF687F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		43F447AA18983B0A00EF687F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		43F447AC18983B1100EF687F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43F447501898364500EF687F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43F447AD18983B1100EF687F /* SystemConfiguration.framework in Frameworks */,
+				43F447AB18983B0A00EF687F /* QuartzCore.framework in Frameworks */,
+				43F447A918983B0000EF687F /* OpenGLES.framework in Frameworks */,
+				43F447A718983AFA00EF687F /* libz.dylib in Frameworks */,
+				43F447A518983AEF00EF687F /* libicucore.dylib in Frameworks */,
+				43F447A318983AE200EF687F /* libc++.dylib in Frameworks */,
+				43F447A118983ADB00EF687F /* ImageIO.framework in Frameworks */,
+				43F4479F18983ACF00EF687F /* GLKit.framework in Frameworks */,
+				43F4479D18983AC900EF687F /* CoreText.framework in Frameworks */,
+				43F4479B18983ABA00EF687F /* CoreData.framework in Frameworks */,
+				43F4479918983AB300EF687F /* AVFoundation.framework in Frameworks */,
+				43F4479318983A3100EF687F /* GoogleMaps.framework in Frameworks */,
+				43F447911898384900EF687F /* CoreLocation.framework in Frameworks */,
+				43F4478F1898384200EF687F /* MapKit.framework in Frameworks */,
+				43F447591898364500EF687F /* CoreGraphics.framework in Frameworks */,
+				43F4475B1898364500EF687F /* UIKit.framework in Frameworks */,
+				43F447571898364500EF687F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43F447741898364500EF687F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43F447791898364500EF687F /* XCTest.framework in Frameworks */,
+				43F4477B1898364500EF687F /* UIKit.framework in Frameworks */,
+				43F4477A1898364500EF687F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43B94DFF1899A92500C9CBCF /* BusTracker */ = {
+			isa = PBXGroup;
+			children = (
+				43B94DFC1899A80B00C9CBCF /* RUMapDataBuses.h */,
+				43B94DFD1899A80B00C9CBCF /* RUMapDataBuses.m */,
+			);
+			name = BusTracker;
+			sourceTree = "<group>";
+		};
+		43E198061899C449009E392E /* MapData */ = {
+			isa = PBXGroup;
+			children = (
+				43B94DF7189999C400C9CBCF /* RUMapDataPerson.h */,
+				43B94DF8189999C400C9CBCF /* RUMapDataPerson.m */,
+				431835651898450300934AF1 /* RUMapDataCourse.h */,
+				431835661898450300934AF1 /* RUMapDataCourse.m */,
+				431835621898425B00934AF1 /* RUMapDataLocation.h */,
+				431835631898425B00934AF1 /* RUMapDataLocation.m */,
+				4318355F1898402900934AF1 /* RUMapDataResult.h */,
+				431835601898402900934AF1 /* RUMapDataResult.m */,
+			);
+			name = MapData;
+			sourceTree = "<group>";
+		};
+		43E198071899C45B009E392E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				43E1980C1899C701009E392E /* bus-icon.png */,
+				43E198171899C9B0009E392E /* bus-icon@2x.png */,
+				4318356A1898C73500934AF1 /* faculty.json */,
+				431835681898C72400934AF1 /* campus_data.json */,
+				43B94DFA1899A40900C9CBCF /* courses.json */,
+				43E198041899C27E009E392E /* bus-blue.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		43E198081899C46D009E392E /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				43E198011899BF85009E392E /* NetworkActivityManager.h */,
+				43E198021899BF85009E392E /* NetworkActivityManager.m */,
+				43E198091899C4B3009E392E /* CachedRemoteJSONData.h */,
+				43E1980A1899C4B3009E392E /* CachedRemoteJSONData.m */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		43F4474A1898364500EF687F = {
+			isa = PBXGroup;
+			children = (
+				43F4475C1898364500EF687F /* Rice University Map */,
+				43F4477E1898364500EF687F /* Rice University MapTests */,
+				43F447551898364500EF687F /* Frameworks */,
+				43F447541898364500EF687F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43F447541898364500EF687F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43F447531898364500EF687F /* Rice University Map.app */,
+				43F447771898364500EF687F /* Rice University MapTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43F447551898364500EF687F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43F447AC18983B1100EF687F /* SystemConfiguration.framework */,
+				43F447AA18983B0A00EF687F /* QuartzCore.framework */,
+				43F447A818983B0000EF687F /* OpenGLES.framework */,
+				43F447A618983AFA00EF687F /* libz.dylib */,
+				43F447A418983AEF00EF687F /* libicucore.dylib */,
+				43F447A218983AE200EF687F /* libc++.dylib */,
+				43F447A018983ADB00EF687F /* ImageIO.framework */,
+				43F4479E18983ACF00EF687F /* GLKit.framework */,
+				43F4479C18983AC900EF687F /* CoreText.framework */,
+				43F4479A18983ABA00EF687F /* CoreData.framework */,
+				43F4479818983AB300EF687F /* AVFoundation.framework */,
+				43F4479618983A8E00EF687F /* GoogleMaps.bundle */,
+				43F4479218983A3100EF687F /* GoogleMaps.framework */,
+				43F447901898384900EF687F /* CoreLocation.framework */,
+				43F4478E1898384200EF687F /* MapKit.framework */,
+				43F447561898364500EF687F /* Foundation.framework */,
+				43F447581898364500EF687F /* CoreGraphics.framework */,
+				43F4475A1898364500EF687F /* UIKit.framework */,
+				43F447781898364500EF687F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43F4475C1898364500EF687F /* Rice University Map */ = {
+			isa = PBXGroup;
+			children = (
+				43E198081899C46D009E392E /* Libraries */,
+				43E198071899C45B009E392E /* Assets */,
+				43E198061899C449009E392E /* MapData */,
+				43B94DFF1899A92500C9CBCF /* BusTracker */,
+				43F447651898364500EF687F /* RUMapAppDelegate.h */,
+				43F447661898364500EF687F /* RUMapAppDelegate.m */,
+				43F447681898364500EF687F /* Main_iPhone.storyboard */,
+				43F4476B1898364500EF687F /* Main_iPad.storyboard */,
+				43F4476E1898364500EF687F /* RUMapViewController.h */,
+				43F4476F1898364500EF687F /* RUMapViewController.m */,
+				43F447711898364500EF687F /* Images.xcassets */,
+				4318355C18983FF200934AF1 /* RUMapDataManager.h */,
+				4318355D18983FF200934AF1 /* RUMapDataManager.m */,
+				43F4475D1898364500EF687F /* Supporting Files */,
+			);
+			path = "Rice University Map";
+			sourceTree = "<group>";
+		};
+		43F4475D1898364500EF687F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43F4475E1898364500EF687F /* Rice University Map-Info.plist */,
+				43F4475F1898364500EF687F /* InfoPlist.strings */,
+				43F447621898364500EF687F /* main.m */,
+				43F447641898364500EF687F /* Rice University Map-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43F4477E1898364500EF687F /* Rice University MapTests */ = {
+			isa = PBXGroup;
+			children = (
+				43F447841898364500EF687F /* Rice_University_MapTests.m */,
+				43F4477F1898364500EF687F /* Supporting Files */,
+			);
+			path = "Rice University MapTests";
+			sourceTree = "<group>";
+		};
+		43F4477F1898364500EF687F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43F447801898364500EF687F /* Rice University MapTests-Info.plist */,
+				43F447811898364500EF687F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43F447521898364500EF687F /* Rice University Map */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43F447881898364500EF687F /* Build configuration list for PBXNativeTarget "Rice University Map" */;
+			buildPhases = (
+				43F4474F1898364500EF687F /* Sources */,
+				43F447501898364500EF687F /* Frameworks */,
+				43F447511898364500EF687F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rice University Map";
+			productName = "Rice University Map";
+			productReference = 43F447531898364500EF687F /* Rice University Map.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43F447761898364500EF687F /* Rice University MapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43F4478B1898364500EF687F /* Build configuration list for PBXNativeTarget "Rice University MapTests" */;
+			buildPhases = (
+				43F447731898364500EF687F /* Sources */,
+				43F447741898364500EF687F /* Frameworks */,
+				43F447751898364500EF687F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43F4477D1898364500EF687F /* PBXTargetDependency */,
+			);
+			name = "Rice University MapTests";
+			productName = "Rice University MapTests";
+			productReference = 43F447771898364500EF687F /* Rice University MapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43F4474B1898364500EF687F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RUMap;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Schurr Solutions";
+				TargetAttributes = {
+					43F447761898364500EF687F = {
+						TestTargetID = 43F447521898364500EF687F;
+					};
+				};
+			};
+			buildConfigurationList = 43F4474E1898364500EF687F /* Build configuration list for PBXProject "Rice University Map" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43F4474A1898364500EF687F;
+			productRefGroup = 43F447541898364500EF687F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43F447521898364500EF687F /* Rice University Map */,
+				43F447761898364500EF687F /* Rice University MapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43F447511898364500EF687F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B94DFB1899A40900C9CBCF /* courses.json in Resources */,
+				43E198181899C9B0009E392E /* bus-icon@2x.png in Resources */,
+				431835691898C72400934AF1 /* campus_data.json in Resources */,
+				43F4476D1898364500EF687F /* Main_iPad.storyboard in Resources */,
+				43E1980D1899C701009E392E /* bus-icon.png in Resources */,
+				43F447721898364500EF687F /* Images.xcassets in Resources */,
+				43F4476A1898364500EF687F /* Main_iPhone.storyboard in Resources */,
+				4318356B1898C73500934AF1 /* faculty.json in Resources */,
+				43F447611898364500EF687F /* InfoPlist.strings in Resources */,
+				43F4479718983A8E00EF687F /* GoogleMaps.bundle in Resources */,
+				43E198051899C27E009E392E /* bus-blue.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43F447751898364500EF687F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43F447831898364500EF687F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43F4474F1898364500EF687F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				431835671898450300934AF1 /* RUMapDataCourse.m in Sources */,
+				43F447701898364500EF687F /* RUMapViewController.m in Sources */,
+				43B94DF9189999C400C9CBCF /* RUMapDataPerson.m in Sources */,
+				43E198031899BF85009E392E /* NetworkActivityManager.m in Sources */,
+				43F447671898364500EF687F /* RUMapAppDelegate.m in Sources */,
+				43F447631898364500EF687F /* main.m in Sources */,
+				4318355E18983FF200934AF1 /* RUMapDataManager.m in Sources */,
+				43B94DFE1899A80B00C9CBCF /* RUMapDataBuses.m in Sources */,
+				43E1980B1899C4B3009E392E /* CachedRemoteJSONData.m in Sources */,
+				431835611898402900934AF1 /* RUMapDataResult.m in Sources */,
+				431835641898425B00934AF1 /* RUMapDataLocation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43F447731898364500EF687F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43F447851898364500EF687F /* Rice_University_MapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43F4477D1898364500EF687F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43F447521898364500EF687F /* Rice University Map */;
+			targetProxy = 43F4477C1898364500EF687F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43F4475F1898364500EF687F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43F447601898364500EF687F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		43F447681898364500EF687F /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43F447691898364500EF687F /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		43F4476B1898364500EF687F /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43F4476C1898364500EF687F /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		43F447811898364500EF687F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43F447821898364500EF687F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43F447861898364500EF687F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43F447871898364500EF687F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43F447891898364500EF687F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/ectrian/Developer/Rice\\ University\\ Map",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rice University Map/Rice University Map-Prefix.pch";
+				INFOPLIST_FILE = "Rice University Map/Rice University Map-Info.plist";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		43F4478A1898364500EF687F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/ectrian/Developer/Rice\\ University\\ Map",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rice University Map/Rice University Map-Prefix.pch";
+				INFOPLIST_FILE = "Rice University Map/Rice University Map-Info.plist";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		43F4478C1898364500EF687F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Rice University Map.app/Rice University Map";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rice University Map/Rice University Map-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Rice University MapTests/Rice University MapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		43F4478D1898364500EF687F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Rice University Map.app/Rice University Map";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rice University Map/Rice University Map-Prefix.pch";
+				INFOPLIST_FILE = "Rice University MapTests/Rice University MapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43F4474E1898364500EF687F /* Build configuration list for PBXProject "Rice University Map" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43F447861898364500EF687F /* Debug */,
+				43F447871898364500EF687F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43F447881898364500EF687F /* Build configuration list for PBXNativeTarget "Rice University Map" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43F447891898364500EF687F /* Debug */,
+				43F4478A1898364500EF687F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43F4478B1898364500EF687F /* Build configuration list for PBXNativeTarget "Rice University MapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43F4478C1898364500EF687F /* Debug */,
+				43F4478D1898364500EF687F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43F4474B1898364500EF687F /* Project object */;
+}
